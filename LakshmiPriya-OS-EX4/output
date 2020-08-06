@@ -1,0 +1,168 @@
+185001083@OSNPL-C15:~/OS/LakshmiPriya-OS-EX4$ gcc scheduling2.c -o sch
+185001083@OSNPL-C15:~/OS/LakshmiPriya-OS-EX4$ ./sch
+
+
+Choose scheduling algorithm:
+	1. Round Robin
+	2. Non pre-emptive priority
+	3. Pre-emptive priority
+	0. Exit
+Enter choice: 1
+
+Enter number of processes: 5
+
+Enter process ID   : p1
+Enter arrival time : 0
+Enter burst time   : 6
+
+Enter process ID   : p2
+Enter arrival time : 1
+Enter burst time   : 2
+
+Enter process ID   : p3
+Enter arrival time : 1
+Enter burst time   : 3
+
+Enter process ID   : p4
+Enter arrival time : 2
+Enter burst time   : 1
+
+Enter process ID   : p5
+Enter arrival time : 2
+Enter burst time   : 2
+
+Enter time slice: 2
+
+Process ID	Arrival Time	Burst Time	Waiting Time	Turnaround Time
+        p2	         1	         2	         1		         3
+        p4	         2	         1	         4		         5
+        p5	         2	         2	         5		         7
+        p3	         1	         3	         8		        11
+        p1	         0	         6	         8		        14
+Average Waiting Time    = 5.200000
+Average Turnaround Time = 8.000000
+
+
+GANTT CHART
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|	p1        |	p2        |	p3        |	p4        |	p5        |	p1        |	p3        |	p1        |
+----------------------------------------------------------------------------------------------------------------------------------------
+0.00      	2.00      	4.00      	6.00      	7.00      	9.00      	11.00     	12.00     	14.00     
+
+
+
+Choose scheduling algorithm:
+	1. Round Robin
+	2. Non pre-emptive priority
+	3. Pre-emptive priority
+	0. Exit
+Enter choice: 2
+
+Enter number of processes: 5
+
+Enter process ID   : p1
+Enter arrival time : 0
+Enter burst time   : 6
+Enter priority     : 2
+
+Enter process ID   : p2
+Enter arrival time : 1
+Enter burst time   : 2
+Enter priority     : 2
+
+Enter process ID   : p3
+Enter arrival time : 1
+Enter burst time   : 3
+Enter priority     : 4
+
+Enter process ID   : p4
+Enter arrival time : 2
+Enter burst time   : 1
+Enter priority     : 1
+
+Enter process ID   : p5
+Enter arrival time : 2
+Enter burst time   : 2
+Enter priority     : 3
+
+Process ID	Arrival Time	Burst Time	  Priority	Waiting Time	Turnaround Time
+        p1	         0	         6	         2	         0		         6
+        p4	         2	         1	         1	         4		         5
+        p2	         1	         2	         2	         6		         8
+        p5	         2	         2	         3	         7		         9
+        p3	         1	         3	         4	        10		        13
+Average Waiting time    = 5.400000
+Average Turnaround time = 8.200000
+
+GANTT CHART
+
+-------------------------------------------------------------------------------------
+|	p1        |	p4        |	p2        |	p5        |	p3        |
+-------------------------------------------------------------------------------------
+0.00      	6.00      	7.00      	9.00      	11.00     	14.00     
+
+
+
+Choose scheduling algorithm:
+	1. Round Robin
+	2. Non pre-emptive priority
+	3. Pre-emptive priority
+	0. Exit
+Enter choice: 3
+
+Enter number of processes: 5
+
+Enter process ID   : p1
+Enter arrival time : 0
+Enter burst time   : 6
+Enter priority     : 2
+
+Enter process ID   : p2
+Enter arrival time : 1
+Enter burst time   : 2
+Enter priority     : 2
+
+Enter process ID   : p3
+Enter arrival time : 1
+Enter burst time   : 3
+Enter priority     : 4
+
+Enter process ID   : p4
+Enter arrival time : 2
+Enter burst time   : 1
+Enter priority     : 1
+
+Enter process ID   : p5
+Enter arrival time : 2
+Enter burst time   : 2
+Enter priority     : 3
+
+Process ID	Arrival Time	Burst Time	  Priority	Waiting Time	Turnaround Time
+        p1	         0	         6	         2	         1		         7
+        p4	         2	         1	         1	         0		         1
+        p2	         1	         2	         2	         6		         8
+        p5	         2	         2	         3	         7		         9
+        p3	         1	         3	         4	        10		        13
+verage Waiting time    = 4.800000
+Average Turnaround time = 7.600000
+
+GANTT CHART
+
+------------------------------------------------------------------------------------------------------
+|	p1        |	p4        |	p1        |	p2        |	p5        |	p3        |
+------------------------------------------------------------------------------------------------------
+0.00      	2.00      	3.00      	7.00      	9.00      	11.00     	14.00     
+
+
+
+
+
+
+Choose scheduling algorithm:
+	1. Round Robin
+	2. Non pre-emptive priority
+	3. Pre-emptive priority
+	0. Exit
+Enter choice: 0
+

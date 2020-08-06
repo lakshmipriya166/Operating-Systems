@@ -1,0 +1,200 @@
+Script started on 2020-01-19 11:27:53+0530
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ cp file.txt OS
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ l[Kld[Ks -l OS
+total 264
+-rw-r--r-- 1 lakshmi lakshmi    100 Jan  1 17:31 a1
+-rwxr-xr-x 1 lakshmi lakshmi    100 Jan  1 17:48 [0m[01;32mf1[0m
+------S--- 1 lakshmi lakshmi 131072 Jan  1 17:46 [30;43mf2[0m
+-rwxr-xr-x 1 lakshmi lakshmi  12728 Jan 16 17:44 [01;32mfcfs[0m
+-rw-rw-r-- 1 lakshmi lakshmi   4063 Jan 16 21:08 fcfs.c
+-rwxr--r-- 1 lakshmi lakshmi      6 Jan 15 18:33 [01;32mfile1.txt[0m
+-rw-r--r-- 1 lakshmi lakshmi    256 Jan 19 11:31 file.txt
+-rw-r--r-- 1 lakshmi lakshmi      6 Jan 15 18:33 foo.txt
+-rwxr-xr-x 1 lakshmi lakshmi   8464 Jan 15 18:24 [01;32mfork[0m
+-rw-r--r-- 1 lakshmi lakshmi    722 Jan 15 18:24 fork.c
+-rwxr-xr-x 1 lakshmi lakshmi  13056 Jan  1 17:00 [01;32mgrepr[0m
+-rw-rw-r-- 1 lakshmi lakshmi   3184 Jan  1 17:00 grepr.c
+-rw-r--r-- 1 lakshmi lakshmi    100 Jan  1 17:27 input.txt
+-rwxr-xr-x 1 lakshmi lakshmi   8520 Jan  1 17:48 [01;32mlist[0m
+-rw-rw-r-- 1 lakshmi lakshmi    320 Jan  1 17:48 list.c
+-rwxr-xr-x 1 lakshmi lakshmi  13056 Jan  1 17:48 [01;32mmycp[0m
+-rw-rw-r-- 1 lakshmi lakshmi   2959 Jan  1 17:48 mycp.c
+-rwxr-xr-x 1 lakshmi lakshmi  13184 Jan 15 18:33 [01;32msyscalls[0m
+-rw-r--r-- 1 lakshmi lakshmi   2042 Jan 15 18:41 syscalls.c
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -l OS/t[Kfile.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 OS/file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ cp -i file.txt OS
+cp: overwrite 'OS/file.txt'? n
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ cp -f file.txt OS
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ mv file.txt [K[K[K[K[K[K[K[K[K[K[K[Km [Kv OS/file.txt OS/filecpy.txt [A
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -l[K[K[K[K[Kmv OS/file.txt OS/filecpy.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pcp -f file.txt OS
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci[C[C[C[C[C[C[C[C[C[C[C[Cls -l OS/file.txt
+ls: cannot access 'OS/file.txt': No such file or directory
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -l OS/file.txt[Cc.txtp.txty.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:33 OS/filecpy.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -l OS/filecpy.txt[3P.txtmv OS/file.txt OS/filecpy.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-OS/file.txt OS/filecpy.txtt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[CiOS/file.txt OS/filecpy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C OS/file.txt OS/filecpy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+mv: cannot stat 'OS/file.txt': No such file or directory
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ mv -i OS/file.txt OS/filecpy.ttxt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.txt OS/filecpy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Cp.txt OS/filecpy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy.txt OS/filecpy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[1P.txt[C[1P.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.t[1Pxt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.tx[1Pt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt[K[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.txt [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc.txt [A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp.txtt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf.txt[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci.txtl.txt[Ce.txt[C[C
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ cat file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ grep unix
+f file.txt
+;
+^C
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ grep unix file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ grep UNIX file.txt
+*****[01;31m[KUNIX[m[K is as [01;31m[KUNIX[m[K does.*****
+*****But [01;31m[KUNIX[m[K is not as DOS does.*****
+*****Nor is DOS as [01;31m[KUNIX[m[K does.*****
+*****So, if [01;31m[KUNIX[m[K was as DOS does,*****
+*****Would [01;31m[KUNIX[m[K be DOS*****
+*****Or would DOS be [01;31m[KUNIX[m[K?*****
+*****As beautiful as a [01;31m[KUNIX[m[K operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ gep[K[Krep -c u[KUNIX file.txt
+7
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ grep -c UNIX file.txt[1P file.txt[1P file.txt[1P file.txt[1P file.txtD file.txtO file.txtS file.txt
+5
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ grep -v B[KDOS.[K file.txt
+*****UNIX is as UNIX does.*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls [K[K[Kls -l file.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ chmod u+e file.txt
+chmod: invalid mode: ‘u+e’
+Try 'chmod --help' for more information.
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ chmod u+e file.txt[1P[1@0[1P[1@o
+chmod: invalid mode: ‘o+e’
+Try 'chmod --help' for more information.
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ chmod o+e file.txt[C[1P[1@u[C[C[1P file.txtx file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -l file.txt
+-rwxr--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 [0m[01;32mfile.txt[0m
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ mdkir -p d1/f1.1[K[K[K[Kd1.1
+
+Command 'mdkir' not found, did you mean:
+
+  command 'mdir' from deb mtools
+  command 'mkdir' from deb coreutils
+
+Try: sudo apt install <deb name>
+
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ mdkir -p d1/d1.1[1P[1P[1@k[1@d
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ ls -lR d1
+d1:
+total 4
+drwxr-xr-x 2 lakshmi lakshmi 4096 Jan 19 11:40 [0m[01;34md1.1[0m
+
+d1/d1.1:
+total 0
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rmdir d1
+rmdir: failed to remove 'd1': Directory not empty
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rmdir d1.1[Cd1.11d1.1/d1.1
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rmdir d1/d1.1[K[1@ls -lR[C[C[Cmkdir -p d1/d1.1[7Pls -lR d1[1Prmdir[C[C[C[1@ls -lR[C[C[C
+d1:
+total 0
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ md[Kkdir ls[K[Kd1/d1.1[K2
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ mkdir d1/d1.2[4Pls -lR d1
+d1:
+total 4
+drwxr-xr-x 2 lakshmi lakshmi 4096 Jan 19 11:41 [0m[01;34md1.2[0m
+
+d1/d1.2:
+total 0
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rm d1
+rm: cannot remove 'd1': Is a directory
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rm d1[C-d1Rd1 d1
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ rm -R d1[3Pd1[4@ls -lR[C[C[C
+ls: cannot access 'd1': No such file or directory
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ wc[K[Kwc fji[K[Kile.txt
+  7  41 256 file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ wc -c file.txt
+256 file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ wc -c file.txt[1P file.txtw file.txt
+41 file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ wc -w file.txtc[C[C[C[C[C[C[C[C[Cw[C[C[C[C[C[C[C[C[C[C[C[C[1P file.txtl file.txt
+7 file.txt
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ who
+lakshmi  :0           2020-01-19 11:24 (:0)
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ whoami
+lakshmi
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ head [K[K[K[K[Kcat file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ hear[Kd 3 file.txt
+head: cannot open '3' for reading: No such file or directory
+==> file.txt <==
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ head 3 file.txt[1@-
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ tail -4 t[Kfile.txt
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ nl file.txt
+     1	*****UNIX is as UNIX does.*****
+     2	*****But UNIX is not as DOS does.*****
+     3	*****Nor is DOS as UNIX does.*****
+     4	*****So, if UNIX was as DOS does,*****
+     5	*****Would UNIX be DOS*****
+     6	*****Or would DOS be UNIX?*****
+     7	*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ head -3 file.txt | tail 2
+tail: cannot open '2' for reading: No such file or directory
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ head -3 file.txt | tail 2-2
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ awk '$0 ~ /DOS/ {print}' a7-e22-f3
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ awk '$0 ~ /DOS/ {print}' a7-e22-f3[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C!~ /DOS/ {print}' a7-e2-f3[A(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ [C[C[C[C[C[C[C[C[C
+
+*****UNIX is as UNIX does.*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ sed s/UNIX/Unix/ file.txt
+*****Unix is as UNIX does.*****
+*****But Unix is not as DOS does.*****
+*****Nor is DOS as Unix does.*****
+*****So, if Unix was as DOS does,*****
+*****Would Unix be DOS*****
+*****Or would DOS be Unix?*****
+*****As beautiful as a Unix operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ sed s/UNIX/Unix/ file.txt[C[1P[1P[1P[1@n[1@i[1@x[C[C[C[C[C[1P[1P[1P[1@N[1@I[1@X[Cg file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ sed /a/d file.txt
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+(base) ]0;lakshmi@LakshmiPriya: ~[01;32mlakshmi@LakshmiPriya[00m:[01;34m~[00m$ exit
+exit
+
+Script done on 2020-01-19 13:14:59+0530

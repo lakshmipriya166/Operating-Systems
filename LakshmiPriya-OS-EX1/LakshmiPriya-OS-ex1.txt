@@ -1,0 +1,191 @@
+(base) lakshmi@LakshmiPriya:~$ script LakshmiPriya-OS-ex1
+Script started, file is LakshmiPriya-OS-ex1
+(base) lakshmi@LakshmiPriya:~$ cp file.txt OS
+(base) lakshmi@LakshmiPriya:~$ ls -l OS
+total 264
+-rw-r--r-- 1 lakshmi lakshmi    100 Jan  1 17:31 a1
+-rwxr-xr-x 1 lakshmi lakshmi    100 Jan  1 17:48 f1
+------S--- 1 lakshmi lakshmi 131072 Jan  1 17:46 f2
+-rwxr-xr-x 1 lakshmi lakshmi  12728 Jan 16 17:44 fcfs
+-rw-rw-r-- 1 lakshmi lakshmi   4063 Jan 16 21:08 fcfs.c
+-rwxr--r-- 1 lakshmi lakshmi      6 Jan 15 18:33 file1.txt
+-rw-r--r-- 1 lakshmi lakshmi    256 Jan 19 11:31 file.txt
+-rw-r--r-- 1 lakshmi lakshmi      6 Jan 15 18:33 foo.txt
+-rwxr-xr-x 1 lakshmi lakshmi   8464 Jan 15 18:24 fork
+-rw-r--r-- 1 lakshmi lakshmi    722 Jan 15 18:24 fork.c
+-rwxr-xr-x 1 lakshmi lakshmi  13056 Jan  1 17:00 grepr
+-rw-rw-r-- 1 lakshmi lakshmi   3184 Jan  1 17:00 grepr.c
+-rw-r--r-- 1 lakshmi lakshmi    100 Jan  1 17:27 input.txt
+-rwxr-xr-x 1 lakshmi lakshmi   8520 Jan  1 17:48 list
+-rw-rw-r-- 1 lakshmi lakshmi    320 Jan  1 17:48 list.c
+-rwxr-xr-x 1 lakshmi lakshmi  13056 Jan  1 17:48 mycp
+-rw-rw-r-- 1 lakshmi lakshmi   2959 Jan  1 17:48 mycp.c
+-rwxr-xr-x 1 lakshmi lakshmi  13184 Jan 15 18:33 syscalls
+-rw-r--r-- 1 lakshmi lakshmi   2042 Jan 15 18:41 syscalls.c
+(base) lakshmi@LakshmiPriya:~$ ls -l OS/file.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 OS/file.txt
+(base) lakshmi@LakshmiPriya:~$ cp -i file.txt OS
+cp: overwrite 'OS/file.txt'? n
+(base) lakshmi@LakshmiPriya:~$ cp -f file.txt OS
+(base) lakshmi@LakshmiPriya:~$ mv OS/file.txt OS/filecpy.txt(base) lakshmi@LakshmiPriya:~$ ls -l OS/file.txt
+ls: cannot access 'OS/file.txt': No such file or directory
+(base) lakshmi@LakshmiPriya:~$ ls -l OS/filecpy.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:33 OS/filecpy.txt
+(base) lakshmi@LakshmiPriya:~$ mv -i OS/file.txt OS/filecpy.txt
+mv: cannot stat 'OS/file.txt': No such file or directory
+(base) lakshmi@LakshmiPriya:~$ mv -i OS/filecpy.txt OS/cpyfile.txt
+(base) lakshmi@LakshmiPriya:~$ cat file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ grep unix
+file.txt
+;
+^C
+(base) lakshmi@LakshmiPriya:~$ grep unix file.txt
+(base) lakshmi@LakshmiPriya:~$ grep UNIX file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ grep -c UNIX file.txt
+7
+(base) lakshmi@LakshmiPriya:~$ grep -c DOS file.txt
+5
+(base) lakshmi@LakshmiPriya:~$ grep -v DOS file.txt
+*****UNIX is as UNIX does.*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ ls -l file.txt
+-rw-r--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 file.txt
+(base) lakshmi@LakshmiPriya:~$ chmod u+e file.txt
+chmod: invalid mode: ‘u+e’
+Try 'chmod --help' for more information.
+(base) lakshmi@LakshmiPriya:~$ chmod o+e file.txt
+chmod: invalid mode: ‘o+e’
+Try 'chmod --help' for more information.
+(base) lakshmi@LakshmiPriya:~$ chmod u+x file.txt
+(base) lakshmi@LakshmiPriya:~$ ls -l file.txt
+-rwxr--r-- 1 lakshmi lakshmi 256 Jan 19 11:31 file.txt
+(base) lakshmi@LakshmiPriya:~$ mdkir -p d1/d1.1
+
+Command 'mdkir' not found, did you mean:
+
+  command 'mdir' from deb mtools
+  command 'mkdir' from deb coreutils
+
+Try: sudo apt install <deb name>
+
+(base) lakshmi@LakshmiPriya:~$ mkdir -p d1/d1.1
+(base) lakshmi@LakshmiPriya:~$ ls -lR d1
+d1:
+total 4
+drwxr-xr-x 2 lakshmi lakshmi 4096 Jan 19 11:40 d1.1
+
+d1/d1.1:
+total 0
+(base) lakshmi@LakshmiPriya:~$ rmdir d1
+rmdir: failed to remove 'd1': Directory not empty
+(base) lakshmi@LakshmiPriya:~$ rmdir d1/d1.1
+(base) lakshmi@LakshmiPriya:~$ ls -lR d1
+d1:
+total 0
+(base) lakshmi@LakshmiPriya:~$ mkdir d1/d1.2
+(base) lakshmi@LakshmiPriya:~$ ls -lR d1
+d1:
+total 4
+drwxr-xr-x 2 lakshmi lakshmi 4096 Jan 19 11:41 d1.2
+
+d1/d1.2:
+total 0
+(base) lakshmi@LakshmiPriya:~$ rm d1
+rm: cannot remove 'd1': Is a directory
+(base) lakshmi@LakshmiPriya:~$ rm -R d1
+(base) lakshmi@LakshmiPriya:~$ ls -lR d1
+ls: cannot access 'd1': No such file or directory
+(base) lakshmi@LakshmiPriya:~$ wc file.txt
+  7  41 256 file.txt
+(base) lakshmi@LakshmiPriya:~$ wc -c file.txt
+256 file.txt
+(base) lakshmi@LakshmiPriya:~$ wc -w file.txt
+41 file.txt
+(base) lakshmi@LakshmiPriya:~$ wc -l file.txt
+7 file.txt
+(base) lakshmi@LakshmiPriya:~$ who
+lakshmi  :0           2020-01-19 11:24 (:0)
+(base) lakshmi@LakshmiPriya:~$ whoami
+lakshmi
+(base) lakshmi@LakshmiPriya:~$ cat file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ head 3 file.txt
+head: cannot open '3' for reading: No such file or directory
+==> file.txt <==
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ head -3 file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+(base) lakshmi@LakshmiPriya:~$ tail -4 file.txt
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ nl file.txt
+     1	*****UNIX is as UNIX does.*****
+     2	*****But UNIX is not as DOS does.*****
+     3	*****Nor is DOS as UNIX does.*****
+     4	*****So, if UNIX was as DOS does,*****
+     5	*****Would UNIX be DOS*****
+     6	*****Or would DOS be UNIX?*****
+     7	*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ head -3 file.txt | tail 2
+tail: cannot open '2' for reading: No such file or directory
+(base) lakshmi@LakshmiPriya:~$ head -3 file.txt | tail -2
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+(base) lakshmi@LakshmiPriya:~$ awk '$0 ~ /DOS/ {print}' a7-e2-f3
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+(base) lakshmi@LakshmiPriya:~$ awk '$0 !~ /DOS/ {print}' a7-e2-f3
+*****UNIX is as UNIX does.*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ sed s/UNIX/Unix/ file.txt
+*****Unix is as UNIX does.*****
+*****But Unix is not as DOS does.*****
+*****Nor is DOS as Unix does.*****
+*****So, if Unix was as DOS does,*****
+*****Would Unix be DOS*****
+*****Or would DOS be Unix?*****
+*****As beautiful as a Unix operating system?*****
+(base) lakshmi@LakshmiPriya:~$ sed s/Unix/UNIX/g file.txt
+*****UNIX is as UNIX does.*****
+*****But UNIX is not as DOS does.*****
+*****Nor is DOS as UNIX does.*****
+*****So, if UNIX was as DOS does,*****
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
+*****As beautiful as a UNIX operating system?*****
+(base) lakshmi@LakshmiPriya:~$ sed /a/d file.txt
+*****Would UNIX be DOS*****
+*****Or would DOS be UNIX?*****
